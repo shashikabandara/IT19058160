@@ -13,7 +13,7 @@ import user.util.Helper;
 
 
 public class Admin {//public class name CustomerService which implements ICustomer
-	//declaring
+	//declaring.
 	//public static final Logger log = Logger.getLogger(AppProperties.class.getName());
 	
 
