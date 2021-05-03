@@ -67,10 +67,10 @@ if (status == "success")
 $(document).on("click", ".btnUpdate", function(event)
 { 
 $("#hidItemIDSave").val($(this).data("itemid")); 
- $("#itemCode").val($(this).closest("tr").find('td:eq(0)').text()); 
- $("#itemName").val($(this).closest("tr").find('td:eq(1)').text()); 
- $("#itemPrice").val($(this).closest("tr").find('td:eq(2)').text()); 
- $("#itemDesc").val($(this).closest("tr").find('td:eq(3)').text()); 
+ $("#from").val($(this).closest("tr").find('td:eq(0)').text()); 
+ $("#to").val($(this).closest("tr").find('td:eq(1)').text()); 
+ $("#subject").val($(this).closest("tr").find('td:eq(2)').text()); 
+ $("#message").val($(this).closest("tr").find('td:eq(3)').text()); 
 });
 
 $(document).on("click", ".btnRemove", function(event)
@@ -130,25 +130,25 @@ if (status == "success")
 function validateItemForm() 
 { 
 // CODE
-if ($("#itemCode").val().trim() == "") 
+if ($("#from").val().trim() == "") 
  { 
- return "Insert Item Code."; 
+ return "Insert from whom the messsage is send."; 
  } 
 // NAME
-if ($("#itemName").val().trim() == "") 
+if ($("#to").val().trim() == "") 
  { 
- return "Insert Item Name."; 
- } 9
+ return "Insert to whom the message is send."; 
+ } 
 // PRICE-------------------------------
-if ($("#itemPrice").val().trim() == "") 
+if ($("#subject").val().trim() == "") 
  { 
- return "Insert Item Price."; 
+ return "Insert subject of message."; 
  } 
 
 // DESCRIPTION------------------------
-if ($("#itemDesc").val().trim() == "") 
+if ($("#message").val().trim() == "") 
  { 
- return "Insert Item Description."; 
+ return "Insert the message."; 
  } 
 return true; 
 }

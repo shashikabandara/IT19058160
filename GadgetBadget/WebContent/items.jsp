@@ -16,16 +16,16 @@ pageEncoding="ISO-8859-1"%>
 <h1>Send Message(Reply)</h1>
 <form id="formItem" name="formItem" action="items.jsp">
  From: 
- <input id="itemCode" name="from" type="text" 
+ <input id="from" name="from" type="text" 
  class="form-control form-control-sm">
  <br> To: 
- <input id="itemName" name="to" type="text" 
+ <input id="to" name="to" type="text" 
  class="form-control form-control-sm">
  <br> Subject: 
- <input id="itemPrice" name="subject" type="text" 
+ <input id="subject" name="subject" type="text" 
  class="form-control form-control-sm">
  <br> Message: 
- <input id="itemDesc" name="message" type="text" 
+ <input id="message" name="message" type="text" 
  class="form-control form-control-sm">
  <br>
  <input id="btnSave" name="btnSave" type="button" value="Save" 
