@@ -255,21 +255,21 @@ public class Admin {//public class name CustomerService which implements ICustom
 		 // iterate through the rows in the result set
 		 while (rs.next()) 
 		 { 
-		 String itemID = Integer.toString(rs.getInt("id")); 
-		 String itemCode = rs.getString("name"); 
-		 String itemName = rs.getString("subject"); 
-		 String itemPrice = rs.getString("designation"); 
-		 String itemDesc = rs.getString("email"); 
-		 String itemDesc2 = rs.getString("message");
+		 String id = Integer.toString(rs.getInt("id")); 
+		 String name = rs.getString("name"); 
+		 String subject = rs.getString("subject"); 
+		 String designation = rs.getString("designation"); 
+		 String email = rs.getString("email"); 
+		 String message = rs.getString("message");
 		// Add into the html table
-		 output += "<tr><td>" + itemCode + "</td>"; 
-		 output += "<td>" + itemName + "</td>"; 
-		 output += "<td>" + itemPrice + "</td>"; 
-		 output += "<td>" + itemDesc + "</td>"; 
-		 output += "<td>" + itemDesc2 + "</td>"; 
+		 output += "<tr><td>" + name + "</td>"; 
+		 output += "<td>" + subject + "</td>"; 
+		 output += "<td>" + designation + "</td>"; 
+		 output += "<td>" + email + "</td>"; 
+		 output += "<td>" + message + "</td>"; 
 		// buttons
 		output +="<td><input name='btnRemove2' type='button' value='Remove' "
-		+ "class='btnRemove2 btn btn-danger' data-itemid='" + itemID + "'></td></tr>"; 
+		+ "class='btnRemove2 btn btn-danger' data-itemid='" + id + "'></td></tr>"; 
 		 } 
 		 con.close(); 
 		 // Complete the html table
@@ -354,21 +354,21 @@ public class Admin {//public class name CustomerService which implements ICustom
 		 // iterate through the rows in the result set
 		 while (rs.next()) 
 		 { 
-		 String itemID = Integer.toString(rs.getInt("id")); 
-		 String itemCode = rs.getString("fromm"); 
-		 String itemName = rs.getString("too"); 
-		 String itemPrice = rs.getString("subject"); 
-		 String itemDesc = rs.getString("message"); 
+		 String id = Integer.toString(rs.getInt("id")); 
+		 String fromm = rs.getString("fromm"); 
+		 String too = rs.getString("too"); 
+		 String subject = rs.getString("subject"); 
+		 String message = rs.getString("message"); 
 		// Add into the html table
-		 output += "<tr><td>" + itemCode + "</td>"; 
-		 output += "<td>" + itemName + "</td>"; 
-		 output += "<td>" + itemPrice + "</td>"; 
-		 output += "<td>" + itemDesc + "</td>"; 
+		 output += "<tr><td>" + fromm + "</td>"; 
+		 output += "<td>" + too + "</td>"; 
+		 output += "<td>" + subject + "</td>"; 
+		 output += "<td>" + message + "</td>"; 
 		// buttons
 		output += "<td><input name='btnUpdate' type='button' value='Update' "
-		+ "class='btnUpdate btn btn-secondary' data-itemid='" + itemID + "'></td>"
+		+ "class='btnUpdate btn btn-secondary' data-itemid='" + id + "'></td>"
 		+ "<td><input name='btnRemove' type='button' value='Remove' "
-		+ "class='btnRemove btn btn-danger' data-itemid='" + itemID + "'></td></tr>"; 
+		+ "class='btnRemove btn btn-danger' data-itemid='" + id + "'></td></tr>"; 
 		 } 
 		 con.close(); 
 		 // Complete the html table
